@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1280;
+    margin: 20px auto;
+    width: 80%;
+}
+.manu-bar{
+    font-size: 10px;
+}
+/* shared styles */
+.text-primary{
+    color: #E95A08;
+    color: #E95A08;
+}
+/* nav styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+/* banner styles */
+.banner-content{
+    max-width: 580px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 85px;
+}
+.banner-description{
+    font-size:22px ;
+    font-weight: normal;
+    color:black;
+}
+.banner-profile-pic{
+    width: 570px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0 0 150px;
+    padding: 20px;
+}
+/* plants style */
+.plants-container{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+
+}
+
+
+
+
