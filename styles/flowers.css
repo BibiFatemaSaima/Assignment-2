@@ -25,6 +25,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 
 }
 .nav-links{
@@ -39,8 +40,11 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
-
+.banner-description,.banner-img{
+    width: 50%;
+}
 .special-color{
     color: orange;
 }
@@ -95,6 +99,10 @@ nav{
     font-size: 48px;
     margin-bottom: 15px;
 }
+.plants-lover-description ul li{
+    margin: 15px 0;
+    font-size: 20px;
+}
 .deals-description p{
     margin: 15px auto 0 auto;
     width: 60%;
@@ -130,14 +138,14 @@ nav{
     text-decoration: underline;
 }
 .shop-bloom{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/deal-bloom.png");
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/assets/deal-bloom.png");
     background-repeat: no-repeat;
     background-position: center center ;
     background-size: cover;
 
 }
 .shop-zabo{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/deal-zabo.png") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/assets/deal-zabo.png") center/cover no-repeat;
     grid-column: span 2;
     grid-row: span 2;
     display: flex;
@@ -146,12 +154,12 @@ nav{
     flex-direction: column;
 }
 .shop-ana{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets//deal-ana.png") center/cover no-repeat ;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/assets//deal-ana.png") center/cover no-repeat ;
 
 }
 
 .colourful-bunch{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/news-letter-bg.png")  center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../images/assets/news-letter-bg.png")  center/cover no-repeat;
     padding: 8rem 0;
     color: #fff;
     text-align: center;
@@ -204,4 +212,44 @@ nav{
 
 .social-links a{
     margin: 0 15px;
+}
+
+.menu-cart{
+    display: flex;
+}
+
+@media (max-width:600px){
+    .menu-links{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-description,.banner-img{
+    width: 100%
+    }
+    .plant-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .badge{
+        display: none;
+    }
+    .plants-lover-section{
+        flex-direction: column;
+    }
+    .shop-section{
+        grid-template-columns: 1fr;
+    }
+    .shop-zabo{
+        grid-column: span 1;
+    }
+    .contact-subscription{
+        width: 70%;
+    }
+    .footer-details{
+        grid-template-columns: 1fr;
+    }
+    .footer-links{
+        grid-template-columns: 1fr;
+    }
 }
