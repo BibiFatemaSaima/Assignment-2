@@ -1,61 +1,113 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 .container{
-    max-width: 1280;
-    margin: 20px auto;
+    max-width: 1280px;
     width: 80%;
+    margin: 0 auto;
 }
-.manu-bar{
-    font-size: 10px;
+/* common style */
+a{
+    text-decoration: none;
 }
-/* shared styles */
-.text-primary{
-    color: #E95A08;
-    color: #E95A08;
+img{
+    width: 100%;
 }
-/* nav styles */
+
+section{
+    margin: 100px 0;
+}
+/* header part */
 nav{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+
 }
-nav a {
-    text-decoration: none;
-    margin-right: 20px;
+.nav-links{
+    display: flex;
+    gap: 20px;
 }
-/* banner styles */
-.banner-content{
-    max-width: 580px;
+.menu-links a{
+    margin: 0 10px;
 }
-.banner-title{
-    font-weight: bold;
-    font-size: 85px;
-}
-.banner-description{
-    font-size:22px ;
-    font-weight: normal;
-    color:black;
-}
-.banner-profile-pic{
-    width: 570px;
-}
+
 .banner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0 0 150px;
-    padding: 20px;
 }
-/* plants style */
-.plants-container{
+
+.special-color{
+    color: orange;
+}
+
+/* plants section */
+
+.plants-description{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.plants-description p{
+    margin: 15px auto 0 auto;
+    width: 60%;
+
+}
+.plant-cards{
     display: grid;
-    grid-template-columns: repeat(3 1fr);
-
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 }
 
-
-
-
+.plant-card{
+    text-align: center;
+}
+.plant-card button{
+    width: 100%;
+    padding: 10px 20px;
+    background: orange;
+    color: #fff;
+    border: 0;
+    outline: 0;
+}
+.plant-card p{
+    margin: 10px 0;
+}
+/* plants-lover-section */
+.plants-lover-section{
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+.badge {
+    position: absolute;
+    left: 199px;
+    top: -111px;
+}
+.badge img{
+    width: 235px;
+}
+.plants-lover-description h1{
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.deals-description p{
+    margin: 15px auto 0 auto;
+    width: 60%;
+    font-size: 22px;
+    font-weight: normal;
+}
+.deals-description{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+}
+.shop-img{
+    width: 100%;
+}
