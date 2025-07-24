@@ -137,10 +137,7 @@ nav{
 
 }
 .shop-zabo{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/deal-zabo.png");
-    background-repeat: no-repeat;
-    background-position: center center ;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/deal-zabo.png") center/cover no-repeat;
     grid-column: span 2;
     grid-row: span 2;
     display: flex;
@@ -149,17 +146,12 @@ nav{
     flex-direction: column;
 }
 .shop-ana{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets//deal-ana.png");
-    background-repeat: no-repeat;
-    background-position: center center ;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets//deal-ana.png") center/cover no-repeat ;
+
 }
 
 .colourful-bunch{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/news-letter-bg.png");
-    background-repeat: no-repeat;
-    background-position: center center ;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/news-letter-bg.png")  center/cover no-repeat;
     padding: 8rem 0;
     color: #fff;
     text-align: center;
