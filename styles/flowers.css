@@ -108,6 +108,108 @@ nav{
     font-weight: bold;
     align-items: center;
 }
+.shop-section{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+   
+}
+
+.shop-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
 .shop-img{
+    text-align: center;
+    color: #fff;
+    padding: 7rem 0;
+    border-radius: 24px;
+}
+.shop-img a{
+    color: #fff;
+    text-decoration: underline;
+}
+.shop-bloom{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/deal-bloom.png");
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+
+}
+.shop-zabo{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.shop-ana{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets//deal-ana.png");
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+}
+
+.colourful-bunch{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/images/assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+    padding: 8rem 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.contact-subscription{
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+.contact-subscription input{
+    padding: 10px 20px;
     width: 100%;
+}
+.contact-subscription button{
+    padding: 10px 20px;
+    background: orange;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: 0;
+    height: 100%;
+}
+
+/* footer */
+
+.footer-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer-links .link{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.lopo-part img{
+    width: 135px;
+}
+
+.social-links a img{
+    width: 35px;
+}
+
+.social-links a{
+    margin: 0 15px;
 }
